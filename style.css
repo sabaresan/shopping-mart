@@ -1,0 +1,311 @@
+*{
+	margin:0;
+	padding:0;
+}
+body
+{
+	background-color:#f1f3f4;
+	font-family:sans-serif;
+}
+.topbar{
+	height:57px;
+	top:0;
+	position:sticky;
+	background:#fff;
+	margin-bottom:20px;
+	border-bottom:3px solid blue;
+	z-index:2;
+}
+.logo{
+	height:40px;
+	margin:5px 10px;
+}
+.form-control{
+	margin-top:9px;
+	margin-left:30px;
+	border:1px solid blue;
+	border-top-left-radius:20px;
+	border-bottom-left-radius:20px;
+	border-top-right-radius:0;
+	border-bottom-right-radius:0;
+	box-shaow:none;
+}
+.input-group-text{
+	background:blue;
+	border:1px solid blue;
+	margin:8.5px 10px 3px 0;
+	border-top-left-radius:0;
+	border-bottom-left-radius:0;
+	border-top-right-radius:20px;
+	border-bottom-right-radius:20px;
+	cursor:pointer;
+	
+}
+.searchbox{
+	display:inline-flex;
+	width:60%;
+}
+.search{
+	color:#fff;
+}
+.menubar{
+	width:40%;
+	height:57px;
+	float:right;
+	
+}
+.menubar ul{
+	display:inline-flex;
+	float:right;
+	
+}
+.menubar ul li{
+	border-left:1px solid  #fff;
+	list-style-type:none;
+	padding:15px 35px;
+	text-align:center;
+	background-color:black;
+	cursor:pointer;
+}
+.menubar ul li a{
+	font-size:16px;
+	font-weight:bold;
+	color:#fff;
+	text-decoration:none;
+}
+.fa-shopping-basket{
+	margin-right:5px;
+}
+@media only screen and(max-width:980px)
+{
+	.topbar
+	{
+		height:118px;
+		border-bottom:0;
+	}
+	.searchbox
+	{
+		width:100%;
+	}
+	.menubar
+	{
+		width:100%;
+	}
+	.menubar ul
+	{
+		margin:10px o;
+		width:100%;
+	}
+	.menubar ul li
+	{
+		height:57px;
+		width:100%;
+	}
+}
+.slidemenu{
+	height:100%;
+	width:15%;
+	font-size:14px;
+	float:left;
+	z-index:2;
+	background-color:#ddd;
+	
+}
+.slidemenu ul{
+	margin-left:10px;
+	
+}
+.slidemenu ul li{
+	list-style-type:none;
+	font-weight:bold;
+	margin-top:10px;
+	cursor:pointer;
+}
+.slidemenu ul li:hover{
+	color:blue;
+}
+.slidemenu ul li ul{
+	display:none;
+	z-index:10;
+	top:77px;
+}
+.slidemenu ul li:hover ul{
+	display:block;
+	height:400px;
+	margin-left:14%;
+	padding:0 100px 10px 10px;
+	position:fixed;
+	background:#ececec;
+	box-shaow:1px  px 4px 1px rgba(0,0,0,0.5);
+}
+.fa-angle-right{
+	margin-top:4px;
+	margin-right:8px;
+	float:right;
+}
+#menubtn,closebtn
+{
+	font-size:30px;
+	margin:10px;
+	color:blue;
+	display:none;
+}
+@media only screen and(max-width:980px)
+{
+	.slidemenu{
+		width:34%;
+		z-index:20;
+		top:33px;
+		position:fixed;
+		font-size:12px;
+		display:none;
+	}
+	.slidemenu ul li ul{
+		top:133px;
+	}
+	.slidemenu ul li:hover ul{
+		margin-left:31%;
+	}
+	#menubtn
+	{
+		display:block;
+	}
+}
+.slider{
+	width:85%;
+	margin-left:15%;
+	padding:0 10px;
+}
+.carousel{
+ box-shaow:1px 1px 4px 1px rgba(0,0,0,0.5);
+}
+.carousel-indicators{
+z-index:1;
+
+}
+.categ{
+	margin:50px 0;
+}
+.categ img{
+	width:100%;
+	padding:20px;
+	transition:1s;
+	cursor:pointer;
+}
+.categ img:hover{
+	transform:scale(1.1);
+}
+.title-box{
+	background-color:black;
+	color:#fff;
+	width:180px;
+	padding:4px 10px;
+	height:40px;
+	margin-bottom:30px;
+	display:flex;
+}
+.title-box h2{
+	font-size:24px;
+}
+.title-box::after
+{
+	content:'';
+	border-top:40px solid black;
+	border-right:50px solid transparent;
+	position:absolute;
+	display:flex;
+	margin-top:-4px;
+	margin-left:170px;
+}
+.producttop img{
+   width:100%;
+   
+}
+.overlayright{
+	display:block;
+	opacity:0;
+	position:absolute;
+	top:10%;
+	margin-left:0;
+	width:70px;
+	
+}
+.overlayright .fa{
+	cursor:pointer;
+	background-color:#fff;
+	color:black;
+	height:35px;
+	width:35px;
+	font-size:20px;
+	padding:7px;
+	margin-top:5%;
+	margin-bottom:5%;
+}
+.overlayright .btn-secondary{
+	background:none;
+	border:none;
+	box-shaow:none;
+}
+.producttop:hover .overlayright
+{
+	opacity:1;
+	margin-left:5%;
+	transition:0.5s;
+}
+.productbottom .fa{
+	color:black;
+	font-size:10px;
+}
+.productbottom h3{
+	font-size:20px;
+	font-weight:bold;
+}
+.productbottom h5{
+	font-size:15px;
+	padding-bottom:10px;
+}
+.singleproduct{
+	margin-top:70px;
+	float:left;
+	
+}
+.new{
+	background:green;
+	width:50px;
+	color:#fff;
+	font-size:12px;
+	font-weight:bold;
+	margin-top:20px;
+}
+.col-md-7 h2{
+   color:#555;	
+}
+.singleproduct .price{
+	color:orange;
+	font-size:26px;
+	font-weight:bold;
+	padding-top:20px;
+}
+.singleproduct input{
+	border:1px solid #ccc;
+	font-weight:bold;
+	height:33px;
+	text-align:center;
+}
+.singleproduct .btn-primary{
+	background:black;
+	color:#fff;
+	font-size:15px;
+	margin-left:20px;
+	border:none;
+	box-shaow:none;
+}
+button{
+  margin:auto;
+  display:block;
+  text-align:center;
+  margin-top:20px;
+}
+
+
+
