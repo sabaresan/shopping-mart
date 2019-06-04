@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport"content="width=device-width">
+<title>shopmart</title>
+<link rel="stylesheet"type="text/css"href="css/style.css">
+<link rel="stylesheet"
+href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="topbar">
+<div class="searchbox">
+
+<a href="shopmart.html"><img src="img/em.jpeg" class="logo"></a>
+<input type="text"class="form-control">
+<span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i>
+</span>
+</div>
+<div class="menubar">
+<ul>
+<li><a href="#"><i class="fa fa-shopping-basket" aria-hidden="true"></i>
+cart</a></li>
+<li><a href="#">Sign Up</a></li>
+<li><a href="#">Login</a></li>
+
+</ul>
+</div>
+</div>
+<section class="doubleproduct">
+<div class="container">
+<div class="row">
+<div class="col-md-5>
+<div id="productslider" class="carousel slide carousel-fade" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/p4.jpeg" class="d-block">
+	  
+    </div>
+  </div>
+  </div>
+  </section>
+<div class="col-md-7">
+<p class="new text-center">NEW</p>
+<h2>Red MI-Black Colour</h2>
+<p>Product Code:INRSD98</p>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<p class="Price">Rs.15000/-</p>
+<p><b>Availability:</b>In stock</p>
+<p><b>Brand:</b>Red MI</p>
+</section>
+<table bgcolor=lightgreen>
+<table border="1" cellpadding="10" cellspacing="5">
+<thead>
+            <tr>
+                <th>ProductName</th><br>
+                <th>Quantity</th>
+                <th>Price</th>
+				<th>Total</th>
+            </tr>
+        </thead>
+<tr>
+  <td>Red MI</td>
+  <td><input type="text" value="" name="QTY" id="QTY" onKeyUp="multiply()"/></td>
+  <td><input type="text" name="PPRICE" id="PPRICE" value="15000" /></td>
+  <td><input type="text" name="TOTAL" id="TOTAL" /></td>
+</tr>
+</table>
+<script>
+function multiply()
+{
+    a = Number(document.getElementById('QTY').value);
+    b = Number(document.getElementById('PPRICE').value);
+    c = a * b;
+
+    document.getElementById('TOTAL').value = c;
+}
+</script>
+<div role="alert" aria-live="assertive" aria-atomic="true" class="toast" data-autohide="false">
+  <div class="toast-header">
+    <img src="img/shop.jpeg">
+    <strong class="mr-auto">Bootstrap</strong>
+    <small>11 mins ago</small>
+    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="toast-body">
+    Thanks for Ordering....
+  </div>
+</div>
+<div>
+  <button>Buy now..</button>
+</div>
+</body>
+</html>
