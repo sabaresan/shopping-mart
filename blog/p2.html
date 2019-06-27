@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<title>Blog</title>
+<link rel="stylesheet"href="style.css">
+<link rel="stylesheet"href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<header>
+<div class="logo">
+<h1 class="logo-text">INFINITI</h1>
+</div>
+<i class="fa fa-bars menu-toggle"></i>
+<ul class="nav">
+<li><a href="#">Home</a>
+<ul style="left:0px;">
+<li><a href="#">Galleries</a></li>
+<li><a href="#">Openings</a></li>
+</ul>
+</li>
+<li><a href="#">About</a></li>
+<li><a href="#">Dashboard</a></li>
+<li><a href="#"class="Logout">logout</a></li>
+</ul>
+</li>
+</ul>
+</header>
+<body>
+<h3>CRAFT</h3>
+<center><img src="img/i6.jpg"></center>
+<p>AgencyAuto provides in-depth analytical reports. Custom report engine, live dashboard, summary reports, one click PPT, 
+and PDF makes life easy for the MIS team.
+AgencyAuto tracks all the transactions and gives summarized report for BSP reconciliation that helps in smooth flow of data and funds between travel agencies
+ and airlines to ensure better control.
+ AgencyAuto helps travel agencies to set up policies for each corporate such that every request raised is cross-checked to ensure non-violation of company policies.
+ AgencyAuto allows travel agencies to map different coupons and offers for different customers which automatically gets displayed at the time of booking.
+ AgencyAuto can be seamlessly integrated with multiple GDS system, accounting, and HRMS software.</p>
+ <p>AgencyAuto systematically checks every PNR at the time of booking and helps in the internal communication that prevents PNR re-work.
+ AgencyAuto helps travel agencies to provide a self-booking portal to the corporates that automate travel planning, requisition, approval, fulfillment, invoicing and reporting.
+ Our travel technology specialist are constantly on the move, to provide the best solution to our client.</p>
+ <h2>Comment Here....</h2>
+<div id="commentbackground">
+
+<p id="para"></p>
+
+<form>
+<textarea id="words" rows="5" cols="200">     </textarea>
+<input type="button" onclick="getwords()" class="btn btn-big" value="submit" />
+</form>
+
+<script type="text/javascript">
+function getwords(){
+text = words.value;
+document.getElementById("para").innerHTML = text
+document.getElementById("words").innerHTML = "enter"
+}
+</script>
+</div><br>
+<h1>Share on..</h1>
+<a href="https://twitter.com/share?url=<URL>&text=<TEXT>&via=<VIA>" target="_blank" class="share-btn twitter">
+    <i class="fa fa-twitter"></i>
+</a>
+
+<a href="https://plus.google.com/share?url=<BTN>" target="_blank" class="share-btn google-plus">
+    <i class="fa fa-google-plus"></i>
+</a>
+
+<a href="https://facebook.com/share?url=<URL>" target="_blank" class="share-btn facebook">
+    <i class="fa fa-facebook"></i>
+</a>
+<a href="https://www.linkedin.com/shareArticle?url=<URL>&title=<TITLE>&summary=<SUMMARY>&source=<SOURCE_URL>" target="_blank" class="share-btn linkedin">
+    <i class="fa fa-linkedin"></i>
+</a>
+<a href="mailto:?subject=<SUBJECT&body=<BODY>" target="_blank" class="share-btn email">
+    <i class="fa fa-envelope"></i>
+</a><br><br>
+<div class="foot">
+</div>
+</body>
+</html>
